@@ -1,4 +1,97 @@
-html {
+html, body {
   height: 100%;
-  width: 100%;
+  margin: 0;
 }
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  background-image: linear-gradient(rgba(76, 131, 141, 0.5), rgba(81, 142, 153, 0.5)), url("../imagens/Background.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;  /* centraliza no meio horizontal */
+  align-items: center;      /* centraliza no meio vertical */
+  height: 100vh;            /* ocupa a tela toda */
+}
+
+.Takessito {
+  display: flex;  /* coloca as colunas lado a lado */
+  gap: 40px;     /* espaço entre as colunas */
+}
+
+.coluna { /*faz a coluna*/
+  background: #4184bb; /* fundo cinza */
+  padding: 20px;
+  border-radius: 15px; /* cantos arredondados */
+  display: flex;
+  flex-direction: column; /* empilha os itens um embaixo do outro */
+  gap: 15px;  /* espaço entre os itens */
+}
+
+.item { /*aonde ta escrito nome*/
+  display: flex;               /* coloca o círculo e o nome lado a lado */
+  align-items: center;         /* alinha no centro vertical */
+  background: #5296f5;         /* fundo azul */
+  padding: 20px 40px;
+  border-radius: 20px;         /* borda arredondada */
+  font-weight: bold;
+  color: white;
+  gap: 10px;                   /* espaço entre círculo e texto */
+  transition: transform 0.2s;  /* anima o transform */
+}
+
+.item:hover {
+  transform: scale(1.01);
+  color: skyblue
+
+}
+
+.icone { /*faz a bolinha*/
+  width: 60px;
+  height: 60px;
+  background: #ccc;
+  border-radius: 50%;  /* transforma em círculo */
+  overflow: hidden; /* esconde o que passar do círculo */
+}
+.titulo {
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    text-align: center;
+}
+
+.icone img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* deixa a imagem circular */
+
+}
+
+#Lais img {
+  object-position: top;
+}
+
+#Victor img {
+  object-position: top;
+}  
